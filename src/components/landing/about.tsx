@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-
+ 
 export default function About() {
   return (
     <section id="about" className="bg-background">
@@ -8,14 +8,16 @@ export default function About() {
         <div className="grid gap-10 md:grid-cols-2 md:gap-16">
           <div className="flex justify-center items-center">
             <Card className="w-full max-w-md overflow-hidden rounded-lg shadow-lg">
-              <Image
-                alt="Dr. Bruna Morais Miranda"
-                className="h-auto w-full object-cover"
-                data-ai-hint="psychologist portrait"
-                height="860"
-                src="/images/about.png"
-                width="600"
-              />
+              <CardContent className="p-0">
+                <Image
+                  alt="Dr. Bruna Morais Miranda"
+                  className="h-auto w-full object-cover"
+                  data-ai-hint="psychologist portrait"
+                  height="860"
+                  src="/images/about.png"
+                  width="600"
+                />
+              </CardContent>
             </Card>
           </div>
           <div className="flex flex-col justify-center space-y-4">

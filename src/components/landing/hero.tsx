@@ -14,15 +14,15 @@ export default function Hero() {
             </p>
           </div>
           <div className="relative flex justify-center items-center">
-            <div className="relative w-[647px] h-[790px] group">
+            <div className="relative w-[650px] h-[900px] group">
               <div 
                 className="absolute inset-0 bg-[#EAF5A4] rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
               />
               <Image
                 alt="Psicóloga Bruna Morais Miranda"
-                src="/images/hero.png"
-                width={400}
-                height={600}
+                src="/images/home.png"
+                width={700}
+                height={790}
                 className="absolute inset-0 w-full h-full object-contain"
                 priority
                 style={{
