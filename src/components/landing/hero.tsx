@@ -14,13 +14,9 @@ export default function Hero() {
             </p>
           </div>
           <div className="relative flex justify-center items-center">
-            <div className="relative w-[300px] h-[450px] sm:w-[350px] sm:h-[525px] md:w-[400px] md:h-[600px] group">
-              <div
-                className="absolute inset-0 bg-primary/20 rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
-                style={{
-                  clipPath:
-                    'polygon(15% 0, 100% 10%, 100% 85%, 85% 100%, 10% 90%, 0 25%)',
-                }}
+            <div className="relative w-[647px] h-[790px] group">
+              <div 
+                className="absolute inset-0 bg-[#EAF5A4] rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
               />
               <Image
                 alt="Psicóloga Bruna Morais Miranda"

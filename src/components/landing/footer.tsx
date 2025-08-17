@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div className="flex flex-col items-start gap-4">
             <Link href="#home" className="flex items-center gap-2" prefetch={false}>
-              <Logo className="h-8 w-8 text-accent" />
+              <Logo className="h-10 w-auto text-accent" />
             </Link>
           </div>
           <div className="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-secondary-foreground/20 pt-4 text-center text-sm text-secondary-foreground/60">
-          <p>&copy; {currentYear} Dr. Bruna Morais Miranda. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear}. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
