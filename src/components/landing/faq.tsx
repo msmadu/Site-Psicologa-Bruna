@@ -29,7 +29,7 @@ const faqItems = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="bg-secondary/20">
+    <section id="faq" className="bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
