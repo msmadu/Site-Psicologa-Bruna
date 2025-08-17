@@ -131,7 +131,7 @@ export default function Services() {
             alt="A calm and inviting therapy room"
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
-            height="400"
+            height="475"
             src="/images/at.png"
             width={1200}
           />

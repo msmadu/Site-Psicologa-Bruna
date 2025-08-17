@@ -23,8 +23,8 @@ export default function Hero() {
                 }}
               />
               <Image
-                src="/images/hero.png"
                 alt="Psicóloga Bruna Morais Miranda"
+                src="/images/hero.png"
                 width={400}
                 height={600}
                 className="absolute inset-0 w-full h-full object-contain"
