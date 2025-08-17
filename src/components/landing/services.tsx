@@ -47,7 +47,7 @@ export default function Services() {
           {therapyTypes.map((therapy) => (
             <Card key={therapy.title} className="h-full flex flex-col">
               <CardHeader className="flex flex-col items-center text-center">
-                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-primary">
                     <therapy.icon className="h-8 w-8" />
                  </div>
                 <CardTitle className="font-headline text-xl">{therapy.title}</CardTitle>
@@ -81,7 +81,7 @@ export default function Services() {
                 <ul className="space-y-2">
                     {helpSituations.map((sit, i) => (
                         <li key={i} className="flex items-start gap-2">
-                            <CheckCircle2 className="h-5 w-5 text-primary mt-1 shrink-0" />
+                            <CheckCircle2 className="h-5 w-5 text-accent mt-1 shrink-0" />
                             <span className="text-muted-foreground">{sit}</span>
                         </li>
                     ))}
@@ -98,7 +98,7 @@ export default function Services() {
              <div className="mx-auto grid max-w-4xl gap-8 py-12 md:grid-cols-2">
                  <Card>
                      <CardHeader className="flex flex-row items-center gap-4">
-                         <Monitor className="h-8 w-8 text-primary"/>
+                         <Monitor className="h-8 w-8 text-accent"/>
                          <CardTitle className="font-headline text-2xl">Atendimento Online</CardTitle>
                      </CardHeader>
                      <CardContent className="space-y-2 text-muted-foreground">
@@ -112,7 +112,7 @@ export default function Services() {
                  </Card>
                  <Card>
                      <CardHeader className="flex flex-row items-center gap-4">
-                         <MapPin className="h-8 w-8 text-primary"/>
+                         <MapPin className="h-8 w-8 text-accent"/>
                          <CardTitle className="font-headline text-2xl">Atendimento Presencial</CardTitle>
                      </CardHeader>
                      <CardContent className="space-y-2 text-muted-foreground">

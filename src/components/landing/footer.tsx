@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div className="flex flex-col items-start gap-4">
             <Link href="#home" className="flex items-center gap-2" prefetch={false}>
-              <Logo className="h-8 w-8 text-primary" />
+              <Logo className="h-8 w-8 text-accent" />
               <span className="font-headline text-xl font-semibold">Dr. Bruna Morais Miranda</span>
             </Link>
             <p className="text-sm text-secondary-foreground/80">

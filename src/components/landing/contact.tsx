@@ -55,7 +55,7 @@ export default function Contact() {
                     href={method.href}
                     className="group flex items-center gap-4 rounded-lg p-2 transition-colors hover:bg-secondary/50"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-primary transition-colors group-hover:bg-primary group-hover:text-secondary">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-accent transition-colors group-hover:bg-accent group-hover:text-secondary">
                       <method.icon className="h-6 w-6" />
                     </div>
                     <div>
