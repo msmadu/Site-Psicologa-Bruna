@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { HeartHandshake, User, Users, Monitor, MapPin, CheckCircle2 } from 'lucide-react';
-import atendimentoImage from '@/components/images/atendimento.JPEG';
 
 const therapyTypes = [
   {
@@ -133,7 +132,7 @@ export default function Services() {
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
             height="400"
-            src="/home/user/studio/src/components/images/atendimento.JPEG"
+            src="/images/atendimento.JPEG"
             width={1200}
           />
         </div>

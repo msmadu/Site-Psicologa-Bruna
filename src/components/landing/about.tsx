@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import aboutImage from '@/components/images/sobre.JPEG'; // Import the local image
 
 export default function About() {
   return (
@@ -14,7 +13,7 @@ export default function About() {
                 className="h-auto w-full object-cover"
                 data-ai-hint="psychologist portrait"
                 height="600"
-                src={aboutImage} // Use the imported local image variable
+                src="/images/sobre.JPEG"
                 width="600"
               />
             </Card>
