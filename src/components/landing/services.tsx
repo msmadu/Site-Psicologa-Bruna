@@ -132,7 +132,7 @@ export default function Services() {
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
             height="400"
-            src="https://placehold.co/1200x400.png"
+            src="/home/user/studio/src/components/images/atendimento.JPEG"
             width="1200"
           />
         </div>

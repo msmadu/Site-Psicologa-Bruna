@@ -23,7 +23,7 @@ export default function Hero() {
                 }}
               />
               <Image
-                src="https://storage.googleapis.com/studio-hosting-storage/asset-65314a38-a6d1-4402-9a3b-1b9c1d028b03"
+                src="/home/user/studio/src/components/images/hero.png"
                 alt="Psicóloga Bruna Morais Miranda"
                 width={400}
                 height={600}
