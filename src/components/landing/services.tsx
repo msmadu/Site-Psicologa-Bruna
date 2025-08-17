@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { HeartHandshake, User, Users, Monitor, MapPin, CheckCircle2 } from 'lucide-react';
+import { User, Users, Monitor, MapPin, CheckCircle2 } from 'lucide-react';
 
 const therapyTypes = [
   {
@@ -128,11 +128,11 @@ export default function Services() {
 
         <div className="mt-12 rounded-lg overflow-hidden">
           <Image
-            alt="A calm and inviting therapy room"
+            alt="Therapeutic Services"
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
             height="475"
-            src="/images/at.png"
+            src="/images/services.png"
             width={1200}
           />
         </div>
