@@ -33,19 +33,19 @@ const helpSituations = [
 
 export default function Services() {
   return (
-    <section id="services" style={{ backgroundColor: '#EAF5A4' }}>
+    <section id="services" className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Serviços Terapêuticos</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Descubra as diferentes formas de cuidado que ofereço para apoiar sua jornada de bem-estar emocional.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {therapyTypes.map((therapy) => (
-            <Card key={therapy.title} className="h-full flex flex-col bg-background/80 backdrop-blur-sm">
+            <Card key={therapy.title} className="h-full flex flex-col bg-background/80 backdrop-blur-sm text-foreground">
               <CardHeader className="flex flex-col items-center text-center">
                  <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
                     <therapy.icon className="h-8 w-8" />
@@ -60,19 +60,19 @@ export default function Services() {
         </div>
         
         <Tabs defaultValue="what-is" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 bg-primary/20">
-            <TabsTrigger value="what-is">O que é Psicoterapia?</TabsTrigger>
-            <TabsTrigger value="why-do">Por que Fazer?</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2 bg-black/20 text-primary-foreground">
+            <TabsTrigger value="what-is" className="data-[state=active]:bg-background data-[state=active]:text-foreground">O que é Psicoterapia?</TabsTrigger>
+            <TabsTrigger value="why-do" className="data-[state=active]:bg-background data-[state=active]:text-foreground">Por que Fazer?</TabsTrigger>
           </TabsList>
           <TabsContent value="what-is">
-            <Card>
+            <Card className="bg-background text-foreground">
               <CardContent className="p-6 space-y-4 text-muted-foreground">
                 <p>A psicoterapia é uma prática profissional conduzida por psicólogos em ambiente clínico. Reconhecida cientificamente e pautada pela ética, envolve encontros semanais nos quais a psicóloga acolhe o paciente e suas questões emocionais. Utilizando-se de teorias e técnicas que incluem escuta atenta e especializada, a psicoterapia é um caminho para o alívio e compreensão das dores e demandas do indivíduo, oferecendo um ambiente seguro que facilita a descoberta de uma vida mais satisfatória e autêntica.</p>
               </CardContent>
             </Card>
           </TabsContent>
           <TabsContent value="why-do">
-            <Card>
+            <Card className="bg-background text-foreground">
                 <CardHeader>
                     <CardTitle className="font-headline">A terapia é sobre estar em processo.</CardTitle>
                     <CardDescription>Você não precisa estar em crise para começar. Se algo tem causado incômodo, talvez seja um convite para cuidar de si.</CardDescription>
@@ -96,7 +96,7 @@ export default function Services() {
                  <h3 className="font-headline text-3xl font-bold tracking-tighter">Formas de Atendimento</h3>
              </div>
              <div className="mx-auto grid max-w-4xl gap-8 py-12 md:grid-cols-2">
-                 <Card>
+                 <Card className="bg-background text-foreground">
                      <CardHeader className="flex flex-row items-center gap-4">
                          <Monitor className="h-8 w-8 text-primary"/>
                          <CardTitle className="font-headline text-2xl">Atendimento Online</CardTitle>
@@ -110,7 +110,7 @@ export default function Services() {
                          </ul>
                      </CardContent>
                  </Card>
-                 <Card>
+                 <Card className="bg-background text-foreground">
                      <CardHeader className="flex flex-row items-center gap-4">
                          <MapPin className="h-8 w-8 text-primary"/>
                          <CardTitle className="font-headline text-2xl">Atendimento Presencial</CardTitle>
@@ -132,7 +132,7 @@ export default function Services() {
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
             height="400"
-            src="/images/atendimento.JPEG"
+            src="https://storage.googleapis.com/studio-hosting-storage/asset-d7807357-1d52-4753-9174-2a6285494d1a"
             width={1200}
           />
         </div>
