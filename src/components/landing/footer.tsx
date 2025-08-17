@@ -13,9 +13,6 @@ export default function Footer() {
             <Link href="#home" className="flex items-center gap-2" prefetch={false}>
               <Logo className="h-8 w-8 text-accent" />
             </Link>
-            <p className="text-sm text-secondary-foreground/80">
-              Um espaço seguro e humano para sua jornada de autoconhecimento.
-            </p>
           </div>
           <div className="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>

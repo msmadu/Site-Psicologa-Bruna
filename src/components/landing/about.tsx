@@ -12,7 +12,7 @@ export default function About() {
                 alt="Dr. Bruna Morais Miranda"
                 className="h-auto w-full object-cover"
                 data-ai-hint="psychologist portrait"
-                height="600"
+                height="860"
                 src="/images/about.png"
                 width="600"
               />
