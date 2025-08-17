@@ -13,6 +13,7 @@ export default {
         body: ['Alegreya', 'serif'],
         headline: ['Belleza', 'sans-serif'],
         code: ['monospace'],
+        main: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
