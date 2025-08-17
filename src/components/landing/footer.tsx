@@ -6,15 +6,15 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="flex flex-col items-start gap-4">
             <Link href="#home" className="flex items-center gap-2" prefetch={false}>
-              <Logo className="h-8 w-8 text-secondary" />
+              <Logo className="h-8 w-8 text-primary" />
               <span className="font-headline text-xl font-semibold">Dr. Bruna Morais Miranda</span>
             </Link>
-            <p className="text-sm text-primary-foreground/80">
+            <p className="text-sm text-secondary-foreground/80">
               Um espaço seguro e humano para sua jornada de autoconhecimento.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-primary-foreground/20 pt-4 text-center text-sm text-primary-foreground/60">
+        <div className="mt-8 border-t border-secondary-foreground/20 pt-4 text-center text-sm text-secondary-foreground/60">
           <p>&copy; {currentYear} Dr. Bruna Morais Miranda. Todos os direitos reservados.</p>
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <div className="space-y-6">
-            <h1 className="font-main text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+            <h1 className="font-main text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               Se você chegou até aqui possivelmente está passando por desafios
             </h1>
             <p className="text-xl text-foreground/80">
