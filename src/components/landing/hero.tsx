@@ -13,17 +13,16 @@ export default function Hero() {
               Estou aqui para te auxiliar nesta jornada!
             </p>
           </div>
-          <div className="relative flex justify-center items-center">
-            <div className="relative w-[650px] h-[900px] group">
+          <div className="relative mt-8 flex h-[500px] items-center justify-center md:mt-0 md:h-[600px] lg:h-[700px]">
+            <div className="relative h-full w-full max-w-md group">
               <div 
                 className="absolute inset-0 bg-[#EAF5A4] rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
               />
               <Image
                 alt="Psicóloga Bruna Morais Miranda"
                 src="/images/home.png"
-                width={700}
-                height={790}
-                className="absolute inset-0 w-full h-full object-contain"
+                fill
+                className="absolute inset-0 h-full w-full object-contain"
                 priority
                 style={{
                   clipPath:

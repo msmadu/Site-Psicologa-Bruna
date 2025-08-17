@@ -46,7 +46,7 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 md:grid-cols-2 lg:gap-12">
           <div className="flex flex-col justify-center space-y-4">
             <ul className="grid gap-6">
               {contactMethods.map((method) => (
@@ -68,7 +68,7 @@ export default function Contact() {
             </ul>
           </div>
           <div className="flex flex-col items-center justify-center">
-             <Card className="w-full">
+             <Card className="w-full max-w-md">
               <CardContent className="p-6">
                 <h3 className="font-headline text-2xl font-bold mb-4">Siga no Instagram</h3>
                 <div className="grid grid-cols-3 gap-2">
