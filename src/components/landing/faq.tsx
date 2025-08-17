@@ -1,5 +1,4 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
-import AiFaq from './ai-faq';
 
 const faqItems = [
   {
@@ -40,7 +39,7 @@ export default function Faq() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-6xl gap-12 py-12 lg:grid-cols-2 lg:gap-16">
+        <div className="mx-auto max-w-4xl py-12">
           <div className="flex flex-col justify-center">
             <Accordion type="single" collapsible className="w-full">
               {faqItems.map((item, index) => (
@@ -52,9 +51,6 @@ export default function Faq() {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
-          <div className="flex items-start">
-            <AiFaq />
           </div>
         </div>
       </div>
