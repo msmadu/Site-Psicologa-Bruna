@@ -13,7 +13,7 @@ export default function About() {
                 className="h-auto w-full object-cover"
                 data-ai-hint="psychologist portrait"
                 height="600"
-                src="/home/user/studio/src/components/images/sobre.JPEG"
+                src="https://storage.googleapis.com/studio-hosting-storage/asset-5f3a0937-25e3-4754-bbf3-5419b7d34190"
                 width="600"
               />
             </Card>

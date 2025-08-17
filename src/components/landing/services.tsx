@@ -132,7 +132,7 @@ export default function Services() {
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
             height="400"
-            src="/home/user/studio/src/components/images/atendimento.JPEG"
+            src="https://storage.googleapis.com/studio-hosting-storage/asset-d6361a93-5c74-4b53-961e-b811a2f644e5"
             width="1200"
           />
         </div>
