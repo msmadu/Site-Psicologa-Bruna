@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import heroImage from '@/components/images/hero.png';
 
 export default function Hero() {
   return (
@@ -23,7 +24,7 @@ export default function Hero() {
                 }}
               />
               <Image
-                src="/home/user/studio/src/components/images/hero.png"
+                src={heroImage}
                 alt="Psicóloga Bruna Morais Miranda"
                 width={400}
                 height={600}
