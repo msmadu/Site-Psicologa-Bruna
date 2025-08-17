@@ -132,7 +132,7 @@ export default function Services() {
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
             height="475"
-            src="/images/at.png"
+            src="/home/user/studio/src/components/images/at.png"
             width={1200}
           />
         </div>
