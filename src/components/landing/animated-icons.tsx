@@ -69,7 +69,7 @@ const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => 
       className={cn("absolute")} // Keep this to allow absolute positioning
       style={style}
     >
-      <IconComponent className={cn("w-6 h-6")} />
+      <IconComponent className={cn("w-4 h-4 md:w-6 md:h-6")} />
     </motion.div>
   );
 };

@@ -7,16 +7,16 @@ export default function Hero() {
       <AnimatedIcons />
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
-          <div className="relative space-y-6 z-10">
-            <h1 className="font-main text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">
+          <div className="relative space-y-4 md:space-y-6 z-10 text-center md:text-left">
+            <h1 className="font-main text-4xl font-bold tracking-tight sm:text-5xl md:text-5xl lg:text-4xl xl:text-5xl">
               Se você chegou até aqui possivelmente está passando por desafios
             </h1>
-            <p className="text-xl text-foreground/80">
+            <p className="text-lg md:text-xl text-foreground/80">
               Estou aqui para te auxiliar nesta jornada!
             </p>
           </div>
-          <div className="relative mt-8 flex h-[500px] items-center justify-center md:mt-0 md:h-auto md:aspect-square">
-            <div className="relative h-full w-full max-w-md group">
+          <div className="relative mt-8 flex h-[350px] items-center justify-center md:mt-0 md:h-[500px]">
+            <div className="relative h-full w-full max-w-sm md:max-w-md group">
               <div 
                 className="absolute inset-0 bg-[#EAF5A4] opacity-50 rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
               />
