@@ -15,18 +15,31 @@ const icons = [
   { icon: MessageCircle, color: 'text-green-500' },
 ];
 
-const AnimatedIcon = ({ iconData, index }: { iconData: typeof icons[0], index: number }) => {
-  const [position, setPosition] = useState({ x: 0, y: 0, rotate: 0 });
-  const [duration, setDuration] = useState(5);
+const AnimatedIcon = ({ iconData }: { iconData: typeof icons[0] }) => {
+  const [style, setStyle] = useState({});
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setPosition({
-      x: Math.random() * 200 - 100,
-      y: Math.random() * 200 - 100,
-      rotate: Math.random() * 360,
-    });
-    setDuration(Math.random() * 5 + 5); // Random duration between 5 and 10 seconds
+    setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (isMounted) {
+      setStyle({
+        top: `${Math.random() * 80 + 10}%`,
+        left: `${Math.random() * 80 + 10}%`,
+      });
+    }
+  }, [isMounted]);
+
+  if (!isMounted) {
+    return null;
+  }
+  
+  const duration = Math.random() * 5 + 5;
+  const x = Math.random() * 200 - 100;
+  const y = Math.random() * 200 - 100;
+  const rotate = Math.random() * 360;
 
   const IconComponent = iconData.icon;
 
@@ -34,9 +47,9 @@ const AnimatedIcon = ({ iconData, index }: { iconData: typeof icons[0], index: n
     <motion.div
       initial={{ x: 0, y: 0, rotate: 0, scale: 0.8, opacity: 0.5 }}
       animate={{
-        x: position.x,
-        y: position.y,
-        rotate: position.rotate,
+        x,
+        y,
+        rotate,
         scale: 1,
         opacity: 1
       }}
@@ -46,11 +59,8 @@ const AnimatedIcon = ({ iconData, index }: { iconData: typeof icons[0], index: n
         repeatType: 'reverse',
         ease: 'easeInOut',
       }}
-      className={cn("absolute", `top-1/${index % 2 === 0 ? 2 : 3} left-1/${index % 3 === 0 ? 3 : 4}`)}
-      style={{
-        top: `${Math.random() * 80 + 10}%`,
-        left: `${Math.random() * 80 + 10}%`,
-      }}
+      className={cn("absolute")}
+      style={style}
     >
       <IconComponent className={cn("w-8 h-8", iconData.color)} />
     </motion.div>
@@ -59,11 +69,21 @@ const AnimatedIcon = ({ iconData, index }: { iconData: typeof icons[0], index: n
 
 
 export default function AnimatedIcons() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="relative w-full h-full">
             {icons.map((icon, index) => (
-                <AnimatedIcon key={index} iconData={icon} index={index} />
+                <AnimatedIcon key={index} iconData={icon} />
             ))}
         </div>
     </div>
