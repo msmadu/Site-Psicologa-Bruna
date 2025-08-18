@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import { Icon1, Icon2, Icon3, Icon4, Icon5, Icon6, Icon7, Icon8, Icon9 } from './custom-icons';
+import { Icon1, Icon2, Icon3, Icon4, Icon5, Icon6, Icon7, Icon8, Icon9, Icon10, Icon11 } from './custom-icons';
 
 
 const icons = [
@@ -16,6 +16,8 @@ const icons = [
  { icon: Icon7 },
  { icon: Icon8 },
  { icon: Icon9 },
+ { icon: Icon10 },
+ { icon: Icon11 },
 ];
 
 const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => {
@@ -40,7 +42,7 @@ const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => 
     return null;
   }
   
-  const duration = Math.random() * 10 + 10; // Slower animation
+  const duration = Math.random() * 20 + 20; // Slower animation
   const x = Math.random() * 200 - 100;
   const y = Math.random() * 200 - 100;
   const rotate = Math.random() * 360;
@@ -66,7 +68,7 @@ const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => 
       className={cn("absolute")} // Keep this to allow absolute positioning
       style={style}
     >
-      <IconComponent className={cn("w-14 h-14")} />
+      <IconComponent className={cn("w-16 h-16")} />
     </motion.div>
   );
 };
