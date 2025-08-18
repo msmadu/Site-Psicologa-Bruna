@@ -5,10 +5,11 @@ export default function About() {
     <section id="about" className="bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16">
-          <div className="flex justify-center items-center">
+          <div className="relative flex justify-center items-center">
+            <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl"></div>
             <Image
               alt="Dr. Bruna Morais Miranda"
-              className="h-auto w-full max-w-sm rounded-lg object-cover shadow-lg"
+              className="relative h-auto w-full max-w-sm rounded-lg object-cover"
               data-ai-hint="psychologist portrait"
               height="860"
               src="/images/about.png"
