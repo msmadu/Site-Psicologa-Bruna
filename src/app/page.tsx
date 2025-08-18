@@ -5,6 +5,7 @@ import Services from '@/components/landing/services';
 import Faq from '@/components/landing/faq';
 import Contact from '@/components/landing/contact';
 import Footer from '@/components/landing/footer';
+import OrganicShapes from '@/components/landing/organic-shapes';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Services />
         <Faq />
+        <OrganicShapes />
         <Contact />
       </main>
       <Footer />
