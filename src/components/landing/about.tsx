@@ -9,7 +9,7 @@ export default function About() {
             <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl"></div>
             <Image
               alt="Dr. Bruna Morais Miranda"
-              className="relative h-auto w-full max-w-sm rounded-lg object-cover"
+              className="relative h-auto w-full max-w-sm object-contain"
               data-ai-hint="psychologist portrait"
               height="860"
               src="/images/about.png"
