@@ -29,9 +29,6 @@ const instagramPosts = [
   { id: 1, hint: 'serene landscape' },
   { id: 2, hint: 'inspirational quote' },
   { id: 3, hint: 'calm abstract' },
-  { id: 4, hint: 'wellness graphic' },
-  { id: 5, hint: 'mindfulness art' },
-  { id: 6, hint: 'nature therapy' },
 ];
 
 export default function Contact() {
