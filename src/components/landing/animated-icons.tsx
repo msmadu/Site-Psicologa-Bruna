@@ -1,21 +1,24 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Heart, ThumbsUp, Star, Twitter, Instagram, MessageCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Icon1, Icon2, Icon3, Icon4, Icon5, Icon6, Icon7, Icon8, Icon9 } from './custom-icons';
+
 
 const icons = [
-  { icon: Heart, color: 'text-red-500' },
-  { icon: ThumbsUp, color: 'text-blue-500' },
-  { icon: Star, color: 'text-yellow-500' },
-  { icon: Twitter, color: 'text-sky-500' },
-  { icon: Instagram, color: 'text-pink-500' },
-  { icon: MessageCircle, color: 'text-green-500' },
+ { icon: Icon1 },
+ { icon: Icon2 },
+ { icon: Icon3 },
+ { icon: Icon4 },
+ { icon: Icon5 },
+ { icon: Icon6 },
+ { icon: Icon7 },
+ { icon: Icon8 },
+ { icon: Icon9 },
 ];
 
-const AnimatedIcon = ({ iconData }: { iconData: typeof icons[0] }) => {
+const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => {
   const [style, setStyle] = useState({});
   const [isMounted, setIsMounted] = useState(false);
 
@@ -25,6 +28,7 @@ const AnimatedIcon = ({ iconData }: { iconData: typeof icons[0] }) => {
 
   useEffect(() => {
     if (isMounted) {
+      // This ensures this code runs only on the client
       setStyle({
         top: `${Math.random() * 80 + 10}%`,
         left: `${Math.random() * 80 + 10}%`,
@@ -59,10 +63,10 @@ const AnimatedIcon = ({ iconData }: { iconData: typeof icons[0] }) => {
         repeatType: 'reverse',
         ease: 'easeInOut',
       }}
-      className={cn("absolute")}
+      className={cn("absolute")} // Keep this to allow absolute positioning
       style={style}
     >
-      <IconComponent className={cn("w-8 h-8", iconData.color)} />
+      <IconComponent className={cn("w-8 h-8")} />
     </motion.div>
   );
 };
