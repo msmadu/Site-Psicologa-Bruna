@@ -6,12 +6,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-[#FFFAED] text-secondary-foreground">
       <div className="container mx-auto px-4 md:px-6 py-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="flex flex-col items-start gap-4">
             <Link href="#home" className="flex items-center gap-2" prefetch={false}>
-              <Logo className="h-10 w-auto text-accent" />
+              <Logo className="h-10 w-50 text-accent" />
             </Link>
           </div>
           <div className="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
