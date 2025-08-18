@@ -42,7 +42,7 @@ const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => 
     return null;
   }
   
-  const duration = Math.random() * 20 + 20; // Slower animation
+  const duration = Math.random() * 18 + 18; // Slower animation
   const x = Math.random() * 200 - 100;
   const y = Math.random() * 200 - 100;
   const rotate = Math.random() * 360;
