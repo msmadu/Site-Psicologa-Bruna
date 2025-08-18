@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
 import Logo from './logo';
 
 export default function Footer() {
@@ -35,7 +35,6 @@ export default function Footer() {
               <h4 className="font-headline text-lg font-semibold mb-2">Redes Sociais</h4>
               <div className="flex gap-4">
                 <Link href="#" aria-label="Instagram"><Instagram className="h-6 w-6 hover:text-accent transition-colors" /></Link>
-                <Link href="#" aria-label="Facebook"><Facebook className="h-6 w-6 hover:text-accent transition-colors" /></Link>
                 <Link href="#" aria-label="LinkedIn"><Linkedin className="h-6 w-6 hover:text-accent transition-colors" /></Link>
               </div>
             </div>
