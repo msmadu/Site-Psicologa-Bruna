@@ -14,7 +14,7 @@ export default function About() {
                   className="h-auto w-full object-cover"
                   data-ai-hint="psychologist portrait"
                   height="860"
-                  src="/images/about.png"
+                  src="https://placehold.co/600x860.png"
                   width="600"
                 />
               </CardContent>
