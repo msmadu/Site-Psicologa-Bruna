@@ -3,16 +3,16 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Heart, MessageCircle, Star, ThumbsUp, Twitter, Instagram } from 'lucide-react';
+import { HeartIcon, MessageCircleIcon, StarIcon, ThumbsUpIcon, TwitterIcon, InstagramIcon } from './custom-icons';
 import { cn } from '@/lib/utils';
 
 const icons = [
-  { icon: Heart, color: 'text-red-500' },
-  { icon: ThumbsUp, color: 'text-blue-500' },
-  { icon: Star, color: 'text-yellow-500' },
-  { icon: Twitter, color: 'text-sky-500' },
-  { icon: Instagram, color: 'text-pink-500' },
-  { icon: MessageCircle, color: 'text-green-500' },
+  { icon: HeartIcon, color: 'text-red-500' },
+  { icon: ThumbsUpIcon, color: 'text-blue-500' },
+  { icon: StarIcon, color: 'text-yellow-500' },
+  { icon: TwitterIcon, color: 'text-sky-500' },
+  { icon: InstagramIcon, color: 'text-pink-500' },
+  { icon: MessageCircleIcon, color: 'text-green-500' },
 ];
 
 const AnimatedIcon = ({ iconData, index }: { iconData: typeof icons[0], index: number }) => {
