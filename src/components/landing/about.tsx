@@ -14,7 +14,7 @@ export default function About() {
                   className="h-auto w-full object-cover"
                   data-ai-hint="psychologist portrait"
                   height="860"
-                  src="/images/psi.png"
+                  src="/images/about.png"
                   width="600"
                 />
               </CardContent>
