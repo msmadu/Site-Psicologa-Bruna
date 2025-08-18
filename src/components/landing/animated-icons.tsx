@@ -40,7 +40,7 @@ const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => 
     return null;
   }
   
-  const duration = Math.random() * 5 + 5;
+  const duration = Math.random() * 3 + 3;
   const x = Math.random() * 200 - 100;
   const y = Math.random() * 200 - 100;
   const rotate = Math.random() * 360;
