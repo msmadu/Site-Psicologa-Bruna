@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="relative mt-8 flex h-[500px] items-center justify-center md:mt-0 md:h-auto md:aspect-square">
             <div className="relative h-full w-full max-w-md group">
               <div 
-                className="absolute inset-0 bg-[#EAF5A4] rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
+                className="absolute inset-0 bg-[#EAF5A4] opacity-50 rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
               />
               <Image
                 alt="Psicóloga Bruna Morais Miranda"
