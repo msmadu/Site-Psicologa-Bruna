@@ -16,20 +16,14 @@ export default function Hero() {
             </p>
           </div>
           <div className="relative mt-8 flex items-center justify-center md:mt-0">
-            <div className="relative w-full max-w-sm h-[400px] md:max-w-md md:h-[500px] group">
-              <div 
-                className="absolute inset-0 bg-[#EAF5A4] opacity-50 rounded-[50%_50%_50%_50%/50%_50%_50%_50%] transform -rotate-12"
-              />
+            <div className="relative w-full max-w-sm md:max-w-md">
               <Image
                 alt="Psicóloga Bruna Morais Miranda"
                 src="/images/home.png"
-                fill
-                className="absolute inset-0 h-full w-full object-cover object-top z-10"
+                width={600}
+                height={860}
+                className="h-auto w-full rounded-lg object-cover shadow-lg"
                 priority
-                style={{
-                  clipPath:
-                    'polygon(15% 0, 100% 10%, 100% 85%, 85% 100%, 10% 90%, 0 25%)',
-                }}
               />
             </div>
           </div>
