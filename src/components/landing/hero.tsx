@@ -4,10 +4,10 @@ import AnimatedIcons from './animated-icons';
 export default function Hero() {
   return (
     <section id="home" className="relative w-full bg-background pt-12 pb-24 md:pt-16 md:pb-32 overflow-hidden">
-      <AnimatedIcons />
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
-          <div className="space-y-6 z-10">
+          <div className="relative space-y-6 z-10">
+            <AnimatedIcons />
             <h1 className="font-main text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">
               Se você chegou até aqui possivelmente está passando por desafios
             </h1>
