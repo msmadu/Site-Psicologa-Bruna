@@ -42,7 +42,7 @@ const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => 
     return null;
   }
   
-  const duration = Math.random() * 10 + 10; // Faster animation
+  const duration = Math.random() * 5 + 5; // Faster animation
   const x = Math.random() * 200 - 100;
   const y = Math.random() * 200 - 100;
   const rotate = Math.random() * 360;
@@ -68,7 +68,7 @@ const AnimatedIcon = ({ iconData }: { iconData: {icon: React.ElementType} }) => 
       className={cn("absolute")} // Keep this to allow absolute positioning
       style={style}
     >
-      <IconComponent className={cn("w-12 h-12")} />
+      <IconComponent className={cn("w-8 h-8")} />
     </motion.div>
   );
 };
