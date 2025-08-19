@@ -41,6 +41,14 @@ export default function Home() {
         </section>
         <About />
         <Services />
+        <section className="py-12 bg-primary flex justify-center">
+            <Button asChild variant="outline" size="lg" className="rounded-full border-2 border-background text-background hover:bg-background hover:text-primary text-lg px-8 py-6">
+                <Link href="https://wa.me/5511915297265" target="_blank">
+                Entre em contato
+                <WhatsappIcon />
+                </Link>
+            </Button>
+        </section>
         <Faq />
         <OrganicShapes />
         <Contact />
