@@ -28,7 +28,7 @@ export default function Footer() {
               <h4 className="font-headline text-lg font-semibold mb-2">Contato</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="mailto:psibrunamorais@gmail.com" className="hover:text-accent transition-colors">psibrunamorais@gmail.com</a></li>
-                <li><a href="tel:+5511912345678" className="hover:text-accent transition-colors">+55 (11) 91234-5678</a></li>
+                <li><a href="tel:+5511915297265" className="hover:text-accent transition-colors">+55 (11) 91529-7265</a></li>
               </ul>
             </div>
             <div>
