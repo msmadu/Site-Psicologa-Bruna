@@ -34,7 +34,7 @@ export default function About() {
               </p>
             </div>
             <div className="mt-6 flex justify-start">
-                <div className="inline-block rounded-full border-2 border-primary px-6 py-2 text-lg text-primary">
+                <div className="inline-block border-b-2 border-primary pb-1 text-lg text-primary">
                     <span>CRP - 06/166835</span>
                 </div>
             </div>
