@@ -33,6 +33,11 @@ export default function About() {
                 Minha trajetória profissional foi construída, inicialmente, na área de Recursos Humanos, com foco em desenvolvimento e gestão de pessoas. Nesse percurso, pude contribuir para a criação de ambientes de trabalho mais saudáveis e para a implementação de programas voltados ao bem-estar e ao crescimento pessoal e profissional. Movida pelo desejo de aprofundar meu cuidado com a saúde mental, direcionei meu olhar para a clínica. Hoje, minha atuação é enriquecida por essa bagagem, o que me permite acolher com sensibilidade demandas como estresse no trabalho, questões de relacionamento, ansiedade, depressão e outros desafios ligados à saúde emocional.
               </p>
             </div>
+            <div className="mt-6 flex justify-start">
+                <div className="inline-block rounded-full border-2 border-primary px-6 py-2 text-lg text-primary">
+                    <span>CRP - 06/166835</span>
+                </div>
+            </div>
           </div>
         </div>
       </div>
