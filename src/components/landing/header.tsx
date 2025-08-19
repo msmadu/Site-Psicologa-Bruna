@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Mail, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import Logo from './logo';
 import type { SVGProps } from 'react';
 
@@ -69,6 +69,10 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetTitle className="sr-only">Menu</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Navegação principal do site
+                </SheetDescription>
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between border-b pb-4">
                     <Link href="#home" className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
