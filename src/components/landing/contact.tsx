@@ -43,7 +43,7 @@ const contactMethods = [
     icon: Instagram,
     title: 'Instagram',
     value: '@psi.brunamorais',
-    href: 'https://instagram.com',
+    href: 'https://www.instagram.com/psibrumorais?igsh=MXVjNmpiM3pvdnpyeg==',
   },
 ];
 
@@ -92,7 +92,7 @@ export default function Contact() {
                 <h3 className="font-headline text-2xl font-bold mb-4">Siga no Instagram</h3>
                 <div className="grid grid-cols-3 gap-2">
                   {instagramPosts.map((post) => (
-                    <Link key={post.id} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="block aspect-[280/350]">
+                    <Link key={post.id} href="https://www.instagram.com/psibrumorais?igsh=MXVjNmpiM3pvdnpyeg==" target="_blank" rel="noopener noreferrer" className="block aspect-[280/350]">
                       <Image
                         alt={`Instagram post ${post.id}`}
                         className="rounded-md object-cover w-full h-full transition-transform hover:scale-105"
@@ -105,7 +105,7 @@ export default function Contact() {
                   ))}
                 </div>
                 <Button asChild className="mt-4 w-full">
-                  <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.instagram.com/psibrumorais?igsh=MXVjNmpiM3pvdnpyeg==" target="_blank" rel="noopener noreferrer">
                     <Instagram className="mr-2 h-4 w-4" /> Ver Perfil
                   </Link>
                 </Button>
