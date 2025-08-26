@@ -92,14 +92,14 @@ export default function Contact() {
                 <h3 className="font-headline text-2xl font-bold mb-4">Siga no Instagram</h3>
                 <div className="grid grid-cols-3 gap-2">
                   {instagramPosts.map((post) => (
-                    <Link key={post.id} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="block">
+                    <Link key={post.id} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="block aspect-[280/350]">
                       <Image
                         alt={`Instagram post ${post.id}`}
                         className="rounded-md object-cover w-full h-full transition-transform hover:scale-105"
                         height="350"
-                        src={`https://placehold.co/200x350.png`}
+                        src={`https://placehold.co/280x350.png`}
                         data-ai-hint={post.hint}
-                        width="200"
+                        width="280"
                       />
                     </Link>
                   ))}
