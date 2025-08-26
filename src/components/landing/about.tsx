@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section id="about" className="bg-background">
+    <section id="about" className="bg-background" aria-labelledby="about-heading">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16">
           <div className="relative flex justify-center items-center">
             <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl"></div>
             <Image
-              alt="Dr. Bruna Morais Miranda"
+              alt="Retrato da Dra. Bruna Morais Miranda, psicóloga."
               className="relative h-auto w-full max-w-sm object-contain"
               data-ai-hint="psychologist portrait"
               height="860"
@@ -18,7 +18,7 @@ export default function About() {
           </div>
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 id="about-heading" className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Sobre mim
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
