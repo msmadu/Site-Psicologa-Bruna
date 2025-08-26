@@ -48,9 +48,9 @@ const contactMethods = [
 ];
 
 const instagramPosts = [
-  { id: 1, hint: 'serene landscape' },
-  { id: 2, hint: 'inspirational quote' },
-  { id: 3, hint: 'calm abstract' },
+    { id: 1, src: '/images/Post 1.png', hint: 'serene landscape' },
+    { id: 2, src: '/images/Post 2.png', hint: 'inspirational quote' },
+    { id: 3, src: '/images/Post 3.png', hint: 'calm abstract' },
 ];
 
 export default function Contact() {
@@ -97,7 +97,7 @@ export default function Contact() {
                         alt={`Instagram post ${post.id}`}
                         className="rounded-md object-cover w-full h-full transition-transform hover:scale-105"
                         height="350"
-                        src={`https://placehold.co/280x350.png`}
+                        src={post.src}
                         data-ai-hint={post.hint}
                         width="280"
                       />
