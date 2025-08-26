@@ -33,11 +33,11 @@ const helpSituations = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-primary text-primary-foreground pb-12 md:pb-24">
+    <section id="services" className="bg-primary text-primary-foreground pb-12 md:pb-24" aria-labelledby="services-heading">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center pt-12 md:pt-24 lg:pt-32">
           <div className="space-y-2">
-            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Serviços Terapêuticos</h2>
+            <h2 id="services-heading" className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Serviços Terapêuticos</h2>
             <p className="max-w-[900px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Descubra as diferentes formas de cuidado que ofereço para apoiar sua jornada de bem-estar emocional.
             </p>
@@ -128,7 +128,7 @@ export default function Services() {
 
         <div className="mt-12 rounded-lg overflow-hidden">
           <Image
-            alt="Therapeutic Services"
+            alt="Espaço terapêutico calmo e acolhedor"
             className="h-auto w-full object-cover"
             data-ai-hint="serene minimalist interior"
             height="475"
